@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Confirmation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      /* BASE STYLES*/
+      /* SPACERS */
+      .spacerH1 {
+        height: 5px;
+      }
+      .spacerH2 {
+        height: 10px;
+      }
+      .spacerH3 {
+        height: 15px;
+      }
+      .spacerH4 {
+        height: 20px;
+      }
+      .spacerH5 {
+        height: 25px;
+      }
+      .spacerH6 {
+        height: 30px;
+      }
+      .spacerH9 {
+        height: 45px;
+      }
+      .spacerH12 {
+        height: 60px;
+      }
+      .spacerH24 {
+        height: 120px;
+      }
+      .spacerH48 {
+        height: 240px;
+      }
+      .spacerW1 {
+        width: 5px;
+      }
+      .spacerW2 {
+        width: 10px;
+      }
+      .spacerW3 {
+        width: 15px;
+      }
+      .spacerW4 {
+        width: 20px;
+      }
+      .spacerW5 {
+        width: 25px;
+      }
+      .spacerW6 {
+        width: 30px;
+      }
+
+      /* FLEX */
+      .flex {
+        display: flex;
+      }
+      .row {
+        flex-direction: row;
+      }
+      .rowReverse {
+        flex-direction: row-reverse;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .flexWrap {
+        flex-wrap: wrap;
+      }
+      .noWrap {
+        flex-wrap: nowrap;
+      }
+      .wrapReverse {
+        flex-wrap: wrap-reverse;
+      }
+      .columnReverse {
+        flex-direction: column-reverse;
+      }
+      .justifyContentStart {
+        justify-content: flex-start;
+      }
+      .justifyContentEnd {
+        justify-content: flex-end;
+      }
+      .justifyContentBetween {
+        justify-content: space-between;
+      }
+      .justifyContentAround {
+        justify-content: space-around;
+      }
+      .justifyContentEvenly {
+        justify-content: space-evenly;
+      }
+      .justifyContentCenter {
+        justify-content: center;
+      }
+      .alignItemsStart {
+        align-items: flex-start;
+      }
+      .alignItemsEnd {
+        align-items: flex-end;
+      }
+      .alignItemsCenter {
+        align-items: center;
+      }
+      .alignItemsBaseline {
+        align-items: baseline;
+      }
+      .alignItemsStretch {
+        align-items: stretch;
+      }
+      .alignContentStart {
+        align-content: flex-start;
+      }
+      .alignContentEnd {
+        align-content: flex-end;
+      }
+      .alignContentCenter {
+        align-content: center;
+      }
+      .alignContentBetween {
+        align-content: space-between;
+      }
+      .alignContentAround {
+        align-content: space-around;
+      }
+      .alignContentStretch {
+        align-content: stretch;
+      }
+
+      /* CONTAINERS */
+      .page {
+        min-height: 977px;
+      }
+      .container {
+        padding: 0px 96px;
+        width: 624px;
+      }
+      .containerItem {
+        width: 285px;
+        padding: 4px 7.2px;
+      }
+      .sign {
+        width: 133px;
+        height: 1px;
+        border-bottom: 1px solid black;
+      }
+      .signXL {
+        width: 220px;
+        height: 1px;
+        border-bottom: 1px solid black;
+      }
+      .glossary {
+        width: 33%;
+        height: 1px;
+        border-bottom: 1px solid black;
+      }
+
+      /* IMGS */
+      .logoXepelinImg {
+        width: 130px;
+        height: 46px;
+      }
+
+      /* TEXTS */
+      .text {
+        font-size: 8pt;
+        font-family: 'Tinos';
+        font-weight: 400;
+        line-height: 1.25;
+        margin: 0;
+      }
+      .textAlignCenter {
+        text-align: center;
+      }
+      .textAlignRight {
+        text-align: right;
+      }
+      .textAlignLeft {
+        text-align: left;
+      }
+      .textAlignJustify {
+        text-align: justify;
+      }
+      .textBold {
+        font-weight: bold;
+      }
+      .textUnderline {
+        text-decoration: underline;
+      }
+      .textItalic {
+        font-style: italic;
+      }
+
+      /* TABLE */
+      .table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .th,
+      .td {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: center;
+      }
+      .extraTd {
+        min-width: 100px;
+      }
+      /* END BASE STYLES*/
+    </style>
+  </head>
+  <body>
+    <div class="flex justifyContentCenter">
+      <div class="container">
+        <div class="page flex column justifyContentBetween">
+          <div>
+            <img
+              src="https://www.backoffice.ops.xepel.in/logoXepelin.png"
+              alt="logoXepelin"
+              class="logoXepelinImg"
+            />
+
+            <p class="text textBold textUnderline textAlignCenter">
+              CONFIRMACIÓN DE OPERACIÓN N.º {{ orderId }}
+            </p>
+            <div class="spacerH3"></div>
+
+            <p class="text textUnderline textAlignCenter">{{ dateString }}</p>
+            <div class="spacerH3"></div>
+
+            <p class="text textBold textAlignJustify">
+              CONFIRMACIÓN DE OPERACIÓN NO. {{ orderId }} CORRESPONDIENTE AL
+              CONTRATO MÚLTIPLE MARCO PARA LA PRESTACIÓN DE SERVICIOS
+              FINANCIEROS (EL “<span class="textItalic">CONTRATO MÚLTIPLE</span
+              >”) DE FECHA {{ contractDate }}, CELEBRADO ENTRE OPERADORA FALCON,
+              S.A.P.I. DE C.V., SOFOM, E.N.R.; Y, POR OTRA PARTE, {{
+              businessName }}
+            </p>
+            <div class="spacerH3"></div>
+
+            <p class="text">
+              Los términos utilizados con mayúscula inicial tendrán el
+              significado que se atribuye a los mismos en el Contrato Múltiple.
+            </p>
+            <div class="spacerH3"></div>
+
+            <p class="text textAlignJustify">
+              La presente Confirmación de Operación se celebra en seguimiento a
+              la Solicitud de Disposición identificada con el número {{ orderId
+              }} y que, en este acto, es ratificada por el Cliente.
+            </p>
+            <div class="spacerH3"></div>
+
+            <p class="text textAlignJustify">
+              En relación con lo anterior y de conformidad con lo establecido en
+              la Cláusula 3.2 del Contrato Múltiple, las Partes confirmen su
+              acuerdo y entendimiento para celebrar la siguiente Operación:
+            </p>
+            <div class="spacerH3"></div>
+
+            <div>
+              <div class="flex">
+                <div class="containerItem">
+                  <p class="text textBold">Tipo de Operación:</p>
+                </div>
+                <div class="containerItem">
+                  <p class="text">{{ orderType }}</p>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="containerItem">
+                  <p class="text textBold">Fecha de {{ orderTypeAcronym }}:</p>
+                </div>
+                <div class="containerItem">
+                  <p class="text">{{ dateString }}</p>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="containerItem">
+                  <p class="text textBold">
+                    Fecha de Pago de Principal del {{ orderTypeAcronym2 }}:
+                  </p>
+                </div>
+                <div class="containerItem">
+                  {{#orderInvoiceExpirationDates}}
+                  <p class="text">{{ . }}</p>
+                  {{/orderInvoiceExpirationDates}}
+                </div>
+              </div>
+              <div class="flex">
+                <div class="containerItem">
+                  <p class="text textBold">Monto Neto de {{ amountType }}:</p>
+                </div>
+                <div class="containerItem">
+                  <p class="text">
+                    {{ netAmountString }} ({{ netAmountToWords }})
+                  </p>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="containerItem">
+                  <p class="text textBold">Porcentaje de Financiamiento:</p>
+                </div>
+                <div class="containerItem">
+                  <p class="text">{{ advancePct }}.</p>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="containerItem">
+                  <p class="text textBold">
+                    Monto Financiado con {{ orderTypeAcronym2 }}:<sup>1</sup>
+                  </p>
+                </div>
+                <div class="containerItem">
+                  <p class="text">
+                    {{ advanceAmountString }} ({{ advanceAmountToWords }})
+                  </p>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="containerItem">
+                  <p class="text textBold">Tasa de {{ rateType }}:</p>
+                </div>
+                <div class="containerItem">
+                  <p class="text">{{ annualRate }} anual.</p>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="containerItem">
+                  <p class="text textBold">Monto de {{ amountRateType }}:</p>
+                </div>
+                <div class="containerItem">
+                  <p class="text">
+                    {{ interestAmountString }} ({{ interestAmountToWords }})
+                  </p>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="containerItem">
+                  <p class="text textBold">Comisión por Asesoría Xepelin:</p>
+                </div>
+                <div class="containerItem">
+                  <p class="text">
+                    {{ operationCostString }} ({{ operationCostToWords }})
+                  </p>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="containerItem">
+                  <p class="text textBold">
+                    Monto total a entregar al Cliente{{ totalAmountType }}:
+                  </p>
+                </div>
+                <div class="containerItem">
+                  <p class="text">
+                    {{ transferAmountString }} ({{ transferAmountToWords }})
+                  </p>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="containerItem">
+                  <p class="text textBold">Relación de {{ relationType }}:</p>
+                </div>
+                <div class="containerItem">
+                  <p class="text">Se adjunta a la presente como Anexo 1.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="glossary"></div>
+            <div class="spacerH2"></div>
+            <p class="text">
+              <sup>1</sup> Monto de principal que el Cliente deberá pagar a
+              Xepelin y sobre el cual se calcula el Monto de {{ amountRateType
+              }}
+            </p>
+          </div>
+        </div>
+
+        <div class="page">
+          <img
+            src="https://www.backoffice.ops.xepel.in/logoXepelin.png"
+            alt="logoXepelin"
+            class="logoXepelinImg"
+          />
+          <div class="spacerH4"></div>
+
+          <p class="text textAlignJustify">
+            El Cliente en este acto declara bajo protesta de decir verdad que
+            (<span class="textUnderline textItalic">i</span>) a la fecha de la
+            presente Confirmación de Operación, todas las declaraciones
+            realizadas por el Cliente en el Contrato Múltiple son ciertas en
+            todos sus aspectos y continuarán siendo ciertas tras la celebración
+            de la Operación Propuesta, y (<span class="textUnderline textItalic"
+              >ii</span
+            >) a la fecha de la presente Confirmación de Operación, se encuentra
+            en cumplimiento con todas las disposiciones del Contrato Múltiple y
+            la celebración de la Operación Propuesta no afectará el cumplimiento
+            de dichas disposiciones, por lo que no existe, ni existirá como
+            consecuencia de la consumación de la Operación Solicitada, un Evento
+            de Aceleración.
+          </p>
+          <div class="spacerH4"></div>
+
+          <p class="text textAlignCenter">
+            Operadora Falcon, S.A.P.I. de C.V., SOFOM, E.N.R.
+          </p>
+
+          <div class="spacerH9"></div>
+
+          <div class="flex justifyContentCenter">
+            <div class="sign"></div>
+          </div>
+          <p class="text textAlignCenter">Por: Alejandro Toiber Schwartzman</p>
+          <p class="text textAlignCenter">Cargo: Apoderado</p>
+          <div class="spacerH2"></div>
+
+          <p class="text textAlignCenter">{{ businessName }}</p>
+          <div class="spacerH9"></div>
+
+          {{#signatories.formatSignatories}}
+          <div class="flex justifyContentCenter">
+            <div class="signXL"></div>
+          </div>
+          <p class="text textAlignCenter">{{ firstLine }}</p>
+          <p class="text textAlignCenter">{{ secondLine }}</p>
+          <div class="spacerH12"></div>
+          {{/signatories.formatSignatories}}
+        </div>
+
+        <div class="page">
+          <img
+            src="https://www.backoffice.ops.xepel.in/logoXepelin.png"
+            alt="logoXepelin"
+            class="logoXepelinImg"
+          />
+          <div class="spacerH6"></div>
+          <p class="text textBold textAlignCenter">
+            Relación de {{ relationType }}
+          </p>
+          <div class="spacerH6"></div>
+
+          <table class="table">
+            <tr>
+              <th class="th text textBold textUnderline">Folio Fiscal</th>
+              <th class="th text textBold textUnderline">
+                Folio Factura Xepelin
+              </th>
+              <th class="th text textBold textUnderline">Cliente</th>
+              <th class="th text textBold textUnderline">Monto Neto</th>
+            </tr>
+            {{#invoiceTable}}
+            <tr>
+              <td class="td text">{{ uuid }}</td>
+              <td class="td text">{{ folio }}</td>
+              <td class="td text">{{invoiceStakeholderName}}</td>
+              <td class="td text extraTd">{{ amount }}</td>
+            </tr>
+            {{/invoiceTable}}
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

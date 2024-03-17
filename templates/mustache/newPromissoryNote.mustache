@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Promissory Note</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      /* BASE STYLES*/
+      /* SPACERS */
+      .spacerH1 {
+        height: 5px;
+      }
+      .spacerH2 {
+        height: 10px;
+      }
+      .spacerH3 {
+        height: 15px;
+      }
+      .spacerH4 {
+        height: 20px;
+      }
+      .spacerH5 {
+        height: 25px;
+      }
+      .spacerH6 {
+        height: 30px;
+      }
+      .spacerH9 {
+        height: 45px;
+      }
+      .spacerH12 {
+        height: 60px;
+      }
+      .spacerH24 {
+        height: 120px;
+      }
+      .spacerH48 {
+        height: 240px;
+      }
+      .spacerW1 {
+        width: 5px;
+      }
+      .spacerW2 {
+        width: 10px;
+      }
+      .spacerW3 {
+        width: 15px;
+      }
+      .spacerW4 {
+        width: 20px;
+      }
+      .spacerW5 {
+        width: 25px;
+      }
+      .spacerW6 {
+        width: 30px;
+      }
+
+      /* FLEX */
+      .flex {
+        display: flex;
+      }
+      .row {
+        flex-direction: row;
+      }
+      .rowReverse {
+        flex-direction: row-reverse;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .flexWrap {
+        flex-wrap: wrap;
+      }
+      .noWrap {
+        flex-wrap: nowrap;
+      }
+      .wrapReverse {
+        flex-wrap: wrap-reverse;
+      }
+      .columnReverse {
+        flex-direction: column-reverse;
+      }
+      .justifyContentStart {
+        justify-content: flex-start;
+      }
+      .justifyContentEnd {
+        justify-content: flex-end;
+      }
+      .justifyContentBetween {
+        justify-content: space-between;
+      }
+      .justifyContentAround {
+        justify-content: space-around;
+      }
+      .justifyContentEvenly {
+        justify-content: space-evenly;
+      }
+      .justifyContentCenter {
+        justify-content: center;
+      }
+      .alignItemsStart {
+        align-items: flex-start;
+      }
+      .alignItemsEnd {
+        align-items: flex-end;
+      }
+      .alignItemsCenter {
+        align-items: center;
+      }
+      .alignItemsBaseline {
+        align-items: baseline;
+      }
+      .alignItemsStretch {
+        align-items: stretch;
+      }
+      .alignContentStart {
+        align-content: flex-start;
+      }
+      .alignContentEnd {
+        align-content: flex-end;
+      }
+      .alignContentCenter {
+        align-content: center;
+      }
+      .alignContentBetween {
+        align-content: space-between;
+      }
+      .alignContentAround {
+        align-content: space-around;
+      }
+      .alignContentStretch {
+        align-content: stretch;
+      }
+
+      /* CONTAINERS */
+      .page {
+        min-height: 977px;
+      }
+      .container {
+        padding: 0px 96px;
+        width: 624px;
+      }
+      .containerItem {
+        width: 285px;
+        padding: 4px 7.2px;
+      }
+      .sign {
+        width: 133px;
+        height: 1px;
+        border-bottom: 1px solid black;
+      }
+      .signXL {
+        width: 220px;
+        height: 1px;
+        border-bottom: 1px solid black;
+      }
+      .glossary {
+        width: 33%;
+        height: 1px;
+        border-bottom: 1px solid black;
+      }
+
+      /* IMGS */
+      .logoXepelinImg {
+        width: 130px;
+        height: 46px;
+      }
+
+      /* TEXTS */
+      .text {
+        font-size: 8pt;
+        font-family: 'Tinos';
+        font-weight: 400;
+        line-height: 1.25;
+        margin: 0;
+      }
+      .textAlignCenter {
+        text-align: center;
+      }
+      .textAlignRight {
+        text-align: right;
+      }
+      .textAlignLeft {
+        text-align: left;
+      }
+      .textAlignJustify {
+        text-align: justify;
+      }
+      .textBold {
+        font-weight: bold;
+      }
+      .textUnderline {
+        text-decoration: underline;
+      }
+      .textItalic {
+        font-style: italic;
+      }
+
+      /* TABLE */
+      .table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .th,
+      .td {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: center;
+      }
+      .extraTd {
+        min-width: 100px;
+      }
+      /* END BASE STYLES*/
+    </style>
+  </head>
+  <body>
+    <div class="flex justifyContentCenter">
+      <div class="container">
+        <div class="page">
+          <img
+            src="https://www.backoffice.ops.xepel.in/logoXepelin.png"
+            alt="logoXepelin"
+            class="logoXepelinImg"
+          />
+          <div class="spacerH3"></div>
+
+          <p class="text textBold textAlignCenter">PAGARÉ SIN PROTESTO</p>
+          <p class="text textBold textAlignCenter">
+            {{advanceAmountString}} ({{advanceAmountToWords}})
+          </p>
+          <div class="spacerH3"></div>
+
+          <p class="text textAlignJustify">
+            {{businessName}} (el “<span class="textBold textItalic"
+              >Suscriptor</span
+            >”), por este pagaré promete y se obliga incondicionalmente a pagar
+            a la orden de OPERADORA FALCON, S.A.P.I. DE C.V., SOFOM, E.N.R.
+            (“<span class="textBold textItalic">Xepelin</span>”), la cantidad de
+            {{advanceAmountString}} ({{advanceAmountToWords}}), así como todos
+            los intereses (incluyendo ordinarios y, en su caso, moratorios),
+            comisiones, gastos, costos y demás accesorios al monto anterior que
+            se generen en términos de este Pagaré, a más tardar el
+            {{lastExpirationDate}} (la “<span class="textBold textItalic"
+              >Fecha de Vencimiento</span
+            >”).
+          </p>
+          <div class="spacerH3"></div>
+
+          <p class="text">
+            El Suscriptor deberá pagar a Xepelin el monto total de principal
+            conforme al siguiente calendario de pagos:
+          </p>
+          <div class="spacerH3"></div>
+
+          <table class="table">
+            <tr>
+              <th class="th text textUnderline textBold">No.</th>
+              <th class="th text textUnderline textBold">Fecha de pago</th>
+              <th class="th text textUnderline textBold">Monto</th>
+            </tr>
+            {{#paymentCalendarTable}}
+            <tr>
+              <td class="td text">{{number}}</td>
+              <td class="td text">{{expirationDate}}</td>
+              <td class="td text">{{amount}}</td>
+            </tr>
+            {{/paymentCalendarTable}}
+          </table>
+          <div class="spacerH3"></div>
+
+          {{^tableDataSeventh}}
+          <p class="text textAlignJustify">
+            El Suscriptor se obliga a pagar incondicionalmente a Xepelin
+            intereses sobre el saldo de principal insoluto de este pagaré, a
+            partir de la fecha del presente y hasta que dicha cantidad sea
+            pagada en su totalidad, a una tasa de interés bruto anual igual a
+            {{annualRate}} ({{annualRateToWords}}) (la “<span
+              class="textBold textItalic"
+              >Tasa de Interés Ordinaria</span
+            >”).
+          </p>
+          <div class="spacerH3"></div>
+          {{/tableDataSeventh}}
+          <div></div>
+
+          {{^tableDataSixth}}
+          <p class="text textAlignJustify">
+            Si todo o parte del saldo de principal de este pagaré o de cualquier
+            otra cantidad pagadera por el Suscriptor conforme al mismo, no fuere
+            pagada en las fechas establecidas para su pago, ya sea a su
+            vencimiento programado, por vencimiento anticipado o de cualquier
+            otra forma, el saldo insoluto del presente pagaré se dará por
+            vencido anticipadamente y el monto vencido devengará intereses
+            moratorios a una tasa de interés bruto anual igual a la Tasa de
+            Interés Ordinaria multiplicada por 1.5, los cuales será pagaderos a
+            la vista.
+          </p>
+          <div class="spacerH3"></div>
+          {{/tableDataSixth}}
+          <div></div>
+
+          {{^tableDataFifth}}
+          <p class="text textAlignJustify">
+            Cualquier pago a Xepelin conforme al presente pagaré deberá ser
+            realizado en horario hábil; (i) En pesos moneda de curso legal de
+            los Estados Unidos Mexicanos, y (ii) en el lugar de pago el cual es
+            el ubicado en Calle Campos Elíseos, Núm. Ext. 403, Núm. Int. Piso 7,
+            Col. Polanco II Sección, C.P. 11530, Alcaldía Miguel Hidalgo, Ciudad
+            de México. No obstante, lo anterior el Suscriptor podrá cubrir la
+            cantidad indicada mediante transferencia electrónica de fondos
+            inmediatamente disponibles a la cuenta número 0117050259, con CLABE
+            012180001170502594, denominada en Pesos (la “<span
+              class="textBold textItalic"
+              >Cuenta en Pesos</span
+            >”), o bien, a la cuenta número 0117050372, con CLABE
+            012180001170503726, denominada en Dólares (la “<span
+              class="textBold textItalic"
+              >Cuenta en Dólares</span
+            >”), en ambos casos, abiertas a nombre de CIBanco, S.A., Institución
+            de Banca Múltiple Fideicomiso CIB/3650, en BBVA Bancomer, S.A.,
+            Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer, o
+            cualquier otra cuenta bancaria que Xepelin le indique por escrito al
+            Cliente en cualquier tiempo siguiendo las formalidades que para ello
+            se requieran o en cualquier otra cuenta bancaria o domicilio que
+            Xepelin notifique por escrito al Suscriptor; en el entendido que
+            cualquier pago de cualesquier cantidades adeudadas conforme al
+            presente pagaré que el Suscriptor realice en Dólares a la Cuenta en
+            Dólares, deberá ser convertido a Pesos utilizando el tipo de cambio
+            determinado por Xepelin para efectos de calcular las cantidades
+            efectivamente pagadas conforme al presente pagaré. Cuando el día de
+            pago de este pagaré sea considerado un día no hábil, dicho pago
+            deberá ser efectuado en el día hábil inmediato siguiente.
+          </p>
+          <div class="spacerH3"></div>
+          {{/tableDataFifth}}
+          <div></div>
+
+          {{^tableDataFourth}}
+          <p class="text textAlignJustify">
+            El presente Pagaré se regirá e interpretará de acuerdo con la Ley
+            General de Títulos y Operaciones de Crédito. Para el caso de
+            presentarse cualquier controversia en relación con la
+            interpretación, cumplimiento y ejecución del mismo, el Suscriptor se
+            somete expresa e irrevocablemente a los tribunales federales
+            competentes ubicados en la Ciudad de México, renunciando expresa e
+            irrevocablemente a cualquier otra jurisdicción, fuero o competencia
+            que pudiera corresponderles en razón de sus domicilios presentes o
+            futuros o por cualquier otra causa.
+          </p>
+          {{/tableDataFourth}}
+        </div>
+
+        {{#tableDataFourth}}
+        <div class="page">
+          <img
+            src="https://www.backoffice.ops.xepel.in/logoXepelin.png"
+            alt="logoXepelin"
+            class="logoXepelinImg"
+          />
+          <div class="spacerH3"></div>
+
+          {{#tableDataSeventh}}
+          <p class="text textAlignJustify">
+            El Suscriptor se obliga a pagar incondicionalmente a Xepelin
+            intereses sobre el saldo de principal insoluto de este pagaré, a
+            partir de la fecha del presente y hasta que dicha cantidad sea
+            pagada en su totalidad, a una tasa de interés bruto anual igual a
+            {{annualRate}} ({{annualRateToWords}}) (la “<span
+              class="textBold textItalic"
+              >Tasa de Interés Ordinaria</span
+            >”).
+          </p>
+          <div class="spacerH3"></div>
+          {{/tableDataSeventh}}
+          <div></div>
+
+          {{#tableDataSixth}}
+          <p class="text textAlignJustify">
+            Si todo o parte del saldo de principal de este pagaré o de cualquier
+            otra cantidad pagadera por el Suscriptor conforme al mismo, no fuere
+            pagada en las fechas establecidas para su pago, ya sea a su
+            vencimiento programado, por vencimiento anticipado o de cualquier
+            otra forma, el saldo insoluto del presente pagaré se dará por
+            vencido anticipadamente y el monto vencido devengará intereses
+            moratorios a una tasa de interés bruto anual igual a la Tasa de
+            Interés Ordinaria multiplicada por 1.5, los cuales será pagaderos a
+            la vista.
+          </p>
+          <div class="spacerH3"></div>
+          {{/tableDataSixth}}
+          <div></div>
+
+          {{#tableDataFifth}}
+          <p class="text textAlignJustify">
+            Cualquier pago a Xepelin conforme al presente pagaré deberá ser
+            realizado en horario hábil; (i) En pesos moneda de curso legal de
+            los Estados Unidos Mexicanos, y (ii) en el lugar de pago el cual es
+            el ubicado en Calle Campos Elíseos, Núm. Ext. 403, Núm. Int. Piso 7,
+            Col. Polanco II Sección, C.P. 11530, Alcaldía Miguel Hidalgo, Ciudad
+            de México. No obstante, lo anterior el Suscriptor podrá cubrir la
+            cantidad indicada mediante transferencia electrónica de fondos
+            inmediatamente disponibles a la cuenta número 0117050259, con CLABE
+            012180001170502594, denominada en Pesos (la “<span
+              class="textBold textItalic"
+              >Cuenta en Pesos</span
+            >”), o bien, a la cuenta número 0117050372, con CLABE
+            012180001170503726, denominada en Dólares (la “<span
+              class="textBold textItalic"
+              >Cuenta en Dólares</span
+            >”), en ambos casos, abiertas a nombre de CIBanco, S.A., Institución
+            de Banca Múltiple Fideicomiso CIB/3650, en BBVA Bancomer, S.A.,
+            Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer, o
+            cualquier otra cuenta bancaria que Xepelin le indique por escrito al
+            Cliente en cualquier tiempo siguiendo las formalidades que para ello
+            se requieran o en cualquier otra cuenta bancaria o domicilio que
+            Xepelin notifique por escrito al Suscriptor; en el entendido que
+            cualquier pago de cualesquier cantidades adeudadas conforme al
+            presente pagaré que el Suscriptor realice en Dólares a la Cuenta en
+            Dólares, deberá ser convertido a Pesos utilizando el tipo de cambio
+            determinado por Xepelin para efectos de calcular las cantidades
+            efectivamente pagadas conforme al presente pagaré. Cuando el día de
+            pago de este pagaré sea considerado un día no hábil, dicho pago
+            deberá ser efectuado en el día hábil inmediato siguiente.
+          </p>
+          <div class="spacerH3"></div>
+          {{/tableDataFifth}}
+
+          <p class="text textAlignJustify">
+            El presente Pagaré se regirá e interpretará de acuerdo con la Ley
+            General de Títulos y Operaciones de Crédito. Para el caso de
+            presentarse cualquier controversia en relación con la
+            interpretación, cumplimiento y ejecución del mismo, el Suscriptor se
+            somete expresa e irrevocablemente a los tribunales federales
+            competentes ubicados en la Ciudad de México, renunciando expresa e
+            irrevocablemente a cualquier otra jurisdicción, fuero o competencia
+            que pudiera corresponderles en razón de sus domicilios presentes o
+            futuros o por cualquier otra causa.
+          </p>
+          <div class="spacerH3"></div>
+        </div>
+        {{/tableDataFourth}}
+
+        <div class="page">
+          <img
+            src="https://www.backoffice.ops.xepel.in/logoXepelin.png"
+            alt="logoXepelin"
+            class="logoXepelinImg"
+          />
+          <div class="spacerH3"></div>
+
+          <p class="text">
+            Pagaré suscrito en la Ciudad de México, el día {{dateString}}.
+          </p>
+          <div class="spacerH3"></div>
+
+          <p class="text textAlignCenter">El Suscriptor</p>
+          <div class="spacerH3"></div>
+
+          <p class="text textAlignCenter">{{businessName}}</p>
+          <div class="spacerH6"></div>
+          <div class="spacerH6"></div>
+
+          {{#signatoriesWithAddress.formatSignatories}}
+          <div class="flex justifyContentCenter">
+            <div class="signXL"></div>
+          </div>
+          <p class="text textAlignCenter">{{firstLine}}</p>
+          <p class="text textAlignCenter">{{secondLine}}</p>
+          <p class="text textAlignCenter">{{addressLine}}</p>
+          <div class="spacerH6"></div>
+          <div class="spacerH6"></div>
+          {{/signatoriesWithAddress.formatSignatories}}
+
+          <p class="text textAlignCenter">{{endorsementSection}}</p>
+          <div class="spacerH6"></div>
+          <div class="spacerH6"></div>
+
+          {{#endorsementSignatories.formatSignatories}}
+          <div class="flex justifyContentCenter">
+            <div class="signXL"></div>
+          </div>
+          <p class="text textAlignCenter">{{firstLine}}</p>
+          <p class="text textAlignCenter">{{secondLine}}</p>
+          <p class="text textAlignCenter">{{addressLine}}</p>
+          <div class="spacerH6"></div>
+          <div class="spacerH6"></div>
+          {{/endorsementSignatories.formatSignatories}}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

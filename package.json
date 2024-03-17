@@ -1,0 +1,20 @@
+{
+  "name": "documentos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "Oscar Valenzuela",
+  "license": "ISC",
+  "dependencies": {
+    "@sparticuz/chromium": "^119.0.2",
+    "@sparticuz/chromium-min": "^119.0.2",
+    "constructs": "^10.3.0",
+    "mustache": "^4.2.0",
+    "puppeteer": "^21.5.2",
+    "puppeteer-core": "^21.6.1"
+  }
+}

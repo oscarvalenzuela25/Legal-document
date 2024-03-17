@@ -1,0 +1,194 @@
+/* BASE STYLES*/
+/* SPACERS */
+.spacerH1 {
+  height: 5px;
+}
+.spacerH2 {
+  height: 10px;
+}
+.spacerH3 {
+  height: 15px;
+}
+.spacerH4 {
+  height: 20px;
+}
+.spacerH5 {
+  height: 25px;
+}
+.spacerH6 {
+  height: 30px;
+}
+.spacerH9 {
+  height: 45px;
+}
+.spacerH12 {
+  height: 60px;
+}
+.spacerW1 {
+  width: 5px;
+}
+.spacerW2 {
+  width: 10px;
+}
+.spacerW3 {
+  width: 15px;
+}
+.spacerW4 {
+  width: 20px;
+}
+.spacerW5 {
+  width: 25px;
+}
+.spacerW6 {
+  width: 30px;
+}
+
+/* FLEX */
+.flex {
+  display: flex;
+}
+.row {
+  flex-direction: row;
+}
+.rowReverse {
+  flex-direction: row-reverse;
+}
+.column {
+  flex-direction: column;
+}
+.flexWrap {
+  flex-wrap: wrap;
+}
+.noWrap {
+  flex-wrap: nowrap;
+}
+.wrapReverse {
+  flex-wrap: wrap-reverse;
+}
+.columnReverse {
+  flex-direction: column-reverse;
+}
+.justifyContentStart {
+  justify-content: flex-start;
+}
+.justifyContentEnd {
+  justify-content: flex-end;
+}
+.justifyContentBetween {
+  justify-content: space-between;
+}
+.justifyContentAround {
+  justify-content: space-around;
+}
+.justifyContentEvenly {
+  justify-content: space-evenly;
+}
+.justifyContentCenter {
+  justify-content: center;
+}
+.alignItemsStart {
+  align-items: flex-start;
+}
+.alignItemsEnd {
+  align-items: flex-end;
+}
+.alignItemsCenter {
+  align-items: center;
+}
+.alignItemsBaseline {
+  align-items: baseline;
+}
+.alignItemsStretch {
+  align-items: stretch;
+}
+.alignContentStart {
+  align-content: flex-start;
+}
+.alignContentEnd {
+  align-content: flex-end;
+}
+.alignContentCenter {
+  align-content: center;
+}
+.alignContentBetween {
+  align-content: space-between;
+}
+.alignContentAround {
+  align-content: space-around;
+}
+.alignContentStretch {
+  align-content: stretch;
+}
+
+/* CONTAINERS */
+.container {
+  padding: 0px 96px;
+  width: 624px;
+}
+.containerItem {
+  width: 285px;
+  padding: 4px 7.2px;
+}
+.sign {
+  width: 133px;
+  height: 1px;
+  border-bottom: 1px solid black;
+}
+.signXL {
+  width: 220px;
+  height: 1px;
+  border-bottom: 1px solid black;
+}
+.glossary {
+  width: 33%;
+  height: 1px;
+  border-bottom: 1px solid black;
+}
+
+/* IMGS */
+.logoXepelinImg {
+  width: 130px;
+  height: 46px;
+}
+
+/* TEXTS */
+.text {
+  font-size: 8pt;
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  margin: 0;
+}
+.textAlignCenter {
+  text-align: center;
+}
+.textAlignRight {
+  text-align: right;
+}
+.textAlignLeft {
+  text-align: left;
+}
+.textAlignJustify {
+  text-align: justify;
+}
+.textBold {
+  font-weight: bold;
+}
+.textUnderline {
+  text-decoration: underline;
+}
+.textItalic {
+  font-style: italic;
+}
+
+/* TABLE */
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.th,
+.td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: center;
+}
+/* END BASE STYLES*/
