@@ -327,7 +327,7 @@ const newPromissoryNoteData = {
           address: ' - ',
           addressLine:
             'Con Domicilio en DEL AGUILA REAL 19430 INT 08, BAJA MAQ EL AGUILA, TIJUANA, BAJA CALIFORNIA, C.P: 22215',
-          endorsementBusinessAddress: 'Lorem Ipsum',
+          endorsementBusinessName: 'Lorem',
         },
         {
           firstLine: 'Por: xxxxxor manuel ',
@@ -336,7 +336,16 @@ const newPromissoryNoteData = {
           address: ' - ',
           addressLine:
             'Con Domicilio en DEL AGUILA REAL 19430 INT 08, BAJA MAQ EL AGUILA, TIJUANA, BAJA CALIFORNIA, C.P: 22215',
-          endorsementBusinessAddress: 'Lorem Ipsum',
+          endorsementBusinessName: undefined,
+        },
+        {
+          firstLine: 'Por: xxxxxor manuel ',
+          secondLine: 'Cargo: Apoderado',
+          name: 'xxxxxor manuel ',
+          address: ' - ',
+          addressLine:
+            'Con Domicilio en DEL AGUILA REAL 19430 INT 08, BAJA MAQ EL AGUILA, TIJUANA, BAJA CALIFORNIA, C.P: 22215',
+          endorsementBusinessName: null,
         },
       ],
     },
