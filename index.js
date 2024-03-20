@@ -51,6 +51,7 @@ const newAplicationData = {
           'BBVA Bancomer, S.A., Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer',
         accountHolder: 'Holder 6774',
         formatAccountNumber: '00114646320',
+        // accountNumber => clabe
         accountNumber: '012290001146463201',
       },
     ],
