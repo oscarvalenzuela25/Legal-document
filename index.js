@@ -53,6 +53,8 @@ const newAplicationData = {
         formatAccountNumber: '00114646320',
         // accountNumber => clabe
         accountNumber: '012290001146463201',
+        agreement: '127384',
+        reference: '1212937',
       },
     ],
   },
@@ -449,12 +451,12 @@ const newApplicationOutputPdf = `newApplicationOutputPdf${+new Date()}.pdf`;
 const newConfirmationOutputPdf = `newConfirmationOutputPdf${+new Date()}.pdf`;
 const newPromissoryNoteOutputPdf = `newPromissoryNoteOutputPdf${+new Date()}.pdf`;
 
-// convertHtmlToPdf(
-//   newApplicationPath,
-//   newAplicationData,
-//   newApplicationOutputPdf,
-//   'newApplication'
-// );
+convertHtmlToPdf(
+  newApplicationPath,
+  newAplicationData,
+  newApplicationOutputPdf,
+  'newApplication'
+);
 
 // convertHtmlToPdf(
 //   newConfirmationPath,
@@ -463,9 +465,9 @@ const newPromissoryNoteOutputPdf = `newPromissoryNoteOutputPdf${+new Date()}.pdf
 //   'newConfirmation'
 // );
 
-convertHtmlToPdf(
-  newPromissoryNotePath,
-  newPromissoryNoteData,
-  newPromissoryNoteOutputPdf,
-  'newPromissoryNote'
-);
+// convertHtmlToPdf(
+//   newPromissoryNotePath,
+//   newPromissoryNoteData,
+//   newPromissoryNoteOutputPdf,
+//   'newPromissoryNote'
+// );

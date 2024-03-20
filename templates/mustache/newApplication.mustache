@@ -328,6 +328,11 @@
               <p class="text">Beneficiario: {{businessName}}</p>
               <p class="text">Número de cuenta: {{formatAccountNumber}}</p>
               <p class="text">Banco: {{accountNumber}}</p>
+              {{#agreement}}
+              <p class="text">Convenio: {{agreement}}</p>
+              {{/agreement}} {{#reference}}
+              <p class="text">Referencia: {{reference}}</p>
+              {{/reference}}
               <div class="spacerH3"></div>
             </div>
           </div>
