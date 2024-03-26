@@ -313,13 +313,13 @@
           </div>
           <div class="spacerH3"></div>
 
+          {{#showBankAccountInFirstPage}}
           <p class="text">
             El Cliente señala como cuenta bancaria para que Xepelin pueda
             entregar los recursos derivados de la Operación Propuesta la
             siguiente:
           </p>
           <div class="spacerH3"></div>
-
           {{#bankAccounts}}
           <div class="flex">
             <div class="spacerW4"></div>
@@ -337,9 +337,11 @@
             </div>
           </div>
           {{/bankAccounts}}
+          <div></div>
+          {{/showBankAccountInFirstPage}}
 
           <div></div>
-          {{^nextPage}}
+          {{^nextPageByInitialData}}
           <p class="text textAlignJustify">
             En relación con lo anterior, el Cliente declara bajo protesta de
             decir verdad que, a la fecha de la presente Solicitud de Operación,
@@ -369,10 +371,10 @@
           <div class="spacerH12"></div>
           {{/signatories.formatSignatories}}
           <div></div>
-          {{/nextPage}}
+          {{/nextPageByInitialData}}
         </div>
 
-        {{#nextPage}}
+        {{#bankAccountsPageOne}}
         <div class="page">
           <img
             src="https://i.ibb.co/qRMqMsM/logo-Xepelin.png"
@@ -380,6 +382,100 @@
             class="logoXepelinImg"
           />
           <div class="spacerH3"></div>
+
+          <p class="text">
+            El Cliente señala como cuenta bancaria para que Xepelin pueda
+            entregar los recursos derivados de la Operación Propuesta la
+            siguiente:
+          </p>
+          <div class="spacerH3"></div>
+          {{#bankAccounts}}
+          <div class="flex">
+            <div class="spacerW4"></div>
+            <div>
+              <p class="text">Banco: {{bankFullName}}</p>
+              <p class="text">Beneficiario: {{businessName}}</p>
+              <p class="text">Número de cuenta: {{formatAccountNumber}}</p>
+              <p class="text">Banco: {{accountNumber}}</p>
+              {{#agreement}}
+              <p class="text">Convenio: {{agreement}}</p>
+              {{/agreement}} {{#reference}}
+              <p class="text">Referencia: {{reference}}</p>
+              {{/reference}}
+              <div class="spacerH3"></div>
+            </div>
+          </div>
+          {{/bankAccounts}}
+        </div>
+        {{/bankAccountsPageOne}}
+        <div></div>
+
+        {{#bankAccountsPageTwo}}
+        <div class="page">
+          <img
+            src="https://i.ibb.co/qRMqMsM/logo-Xepelin.png"
+            alt="logoXepelin"
+            class="logoXepelinImg"
+          />
+          <div class="spacerH3"></div>
+
+          {{#bankAccountsGreaterThan8}}
+          <div class="flex">
+            <div class="spacerW4"></div>
+            <div>
+              <p class="text">Banco: {{bankFullName}}</p>
+              <p class="text">Beneficiario: {{businessName}}</p>
+              <p class="text">Número de cuenta: {{formatAccountNumber}}</p>
+              <p class="text">Banco: {{accountNumber}}</p>
+              {{#agreement}}
+              <p class="text">Convenio: {{agreement}}</p>
+              {{/agreement}} {{#reference}}
+              <p class="text">Referencia: {{reference}}</p>
+              {{/reference}}
+              <div class="spacerH3"></div>
+            </div>
+          </div>
+          {{/bankAccountsGreaterThan8}}
+        </div>
+        {{/bankAccountsPageTwo}}
+        <div></div>
+
+        {{#nextPageByInitialData}}
+        <div class="page">
+          <img
+            src="https://i.ibb.co/qRMqMsM/logo-Xepelin.png"
+            alt="logoXepelin"
+            class="logoXepelinImg"
+          />
+          <div class="spacerH3"></div>
+
+          {{#bankAccountsWithInitialData}}
+          <p class="text">
+            El Cliente señala como cuenta bancaria para que Xepelin pueda
+            entregar los recursos derivados de la Operación Propuesta la
+            siguiente:
+          </p>
+          <div class="spacerH3"></div>
+          {{#bankAccounts}}
+          <div class="flex">
+            <div class="spacerW4"></div>
+            <div>
+              <p class="text">Banco: {{bankFullName}}</p>
+              <p class="text">Beneficiario: {{businessName}}</p>
+              <p class="text">Número de cuenta: {{formatAccountNumber}}</p>
+              <p class="text">Banco: {{accountNumber}}</p>
+              {{#agreement}}
+              <p class="text">Convenio: {{agreement}}</p>
+              {{/agreement}} {{#reference}}
+              <p class="text">Referencia: {{reference}}</p>
+              {{/reference}}
+              <div class="spacerH3"></div>
+            </div>
+          </div>
+          {{/bankAccounts}}
+          <div></div>
+          {{/bankAccountsWithInitialData}}
+
           <p class="text textAlignJustify">
             En relación con lo anterior, el Cliente declara bajo protesta de
             decir verdad que, a la fecha de la presente Solicitud de Operación,
@@ -410,7 +506,7 @@
           {{/signatories.formatSignatories}}
           <div></div>
         </div>
-        {{/nextPage}}
+        {{/nextPageByInitialData}}
       </div>
     </div>
   </body>

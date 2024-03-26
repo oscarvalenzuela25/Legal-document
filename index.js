@@ -15,13 +15,31 @@ const newAplicationData = {
     orderTypeAcronym: 'Factoraje',
     orderTypeAcronym2: 'Factoraje',
     orderInvoiceExpirationDates: [
-      '8 de enero de 2024,',
       '7 de enero de 2024,',
       '7 de enero de 2024,',
       '7 de enero de 2024,',
       '7 de enero de 2024,',
       '7 de enero de 2024,',
       '7 de enero de 2024',
+      '7 de enero de 2024',
+      '7 de enero de 2024',
+      '7 de enero de 2024',
+      '7 de enero de 2024',
+      '7 de enero de 2024',
+      '7 de enero de 2024',
+      '7 de enero de 2024',
+      '7 de enero de 2024',
+      '7 de enero de 2024',
+      '7 de enero de 2024',
+      '7 de enero de 2024',
+      '7 de enero de 2024',
+      '7 de enero de 2024',
+      '7 de enero de 2024',
+      '7 de enero de 2024',
+      '7 de enero de 2024',
+      '7 de enero de 2024',
+      '7 de enero de 2024',
+      '7 de enero de 2024', //25
     ],
     amountType: 'los Derechos de Crédito Cedidos',
     netAmountString: '$779,925.90 M.N.',
@@ -41,18 +59,210 @@ const newAplicationData = {
           secondLine: 'Cargo: Apoderado',
           name: 'xxxxxor manuel ',
         },
+        {
+          firstLine: 'Por: xxxxxor manuel ',
+          secondLine: 'Cargo: Apoderado',
+          name: 'xxxxxor manuel ',
+        },
+        {
+          firstLine: 'Por: xxxxxor manuel ',
+          secondLine: 'Cargo: Apoderado',
+          name: 'xxxxxor manuel ',
+        },
+        {
+          firstLine: 'Por: xxxxxor manuel ',
+          secondLine: 'Cargo: Apoderado',
+          name: 'xxxxxor manuel ',
+        },
+        {
+          firstLine: 'Por: xxxxxor manuel ',
+          secondLine: 'Cargo: Apoderado',
+          name: 'xxxxxor manuel ',
+        },
+        {
+          firstLine: 'Por: xxxxxor manuel ',
+          secondLine: 'Cargo: Apoderado',
+          name: 'xxxxxor manuel ',
+        },
+        {
+          firstLine: 'Por: xxxxxor manuel ',
+          secondLine: 'Cargo: Apoderado',
+          name: 'xxxxxor manuel ',
+        },
       ],
     },
-    // Siempre es 1 en FD
     bankAccounts: [
+      // Siempre es 1 en FD
+      // accountNumber => clabe
       {
         bankName: 'BBVA BANCOMER',
         bankFullName:
           'BBVA Bancomer, S.A., Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer',
         accountHolder: 'Holder 6774',
-        formatAccountNumber: '00114646320',
-        // accountNumber => clabe
-        accountNumber: '012290001146463201',
+        formatAccountNumber: '12313214561',
+        accountNumber: '012290123132145611',
+        agreement: '127384',
+        reference: '1212937',
+      },
+      {
+        bankName: 'BBVA BANCOMER',
+        bankFullName:
+          'BBVA Bancomer, S.A., Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer',
+        accountHolder: 'Holder 6774',
+        formatAccountNumber: '12313214561',
+        accountNumber: '012290123132145611',
+        agreement: '127384',
+        reference: '1212937',
+      },
+      {
+        bankName: 'BBVA BANCOMER',
+        bankFullName:
+          'BBVA Bancomer, S.A., Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer',
+        accountHolder: 'Holder 6774',
+        formatAccountNumber: '12313214561',
+        accountNumber: '012290123132145611',
+        agreement: '127384',
+        reference: '1212937',
+      },
+      {
+        bankName: 'BBVA BANCOMER',
+        bankFullName:
+          'BBVA Bancomer, S.A., Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer',
+        accountHolder: 'Holder 6774',
+        formatAccountNumber: '12313214561',
+        accountNumber: '012290123132145611',
+        agreement: '127384',
+        reference: '1212937',
+      },
+      {
+        bankName: 'BBVA BANCOMER',
+        bankFullName:
+          'BBVA Bancomer, S.A., Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer',
+        accountHolder: 'Holder 6774',
+        formatAccountNumber: '12313214561',
+        accountNumber: '012290123132145611',
+        agreement: '127384',
+        reference: '1212937',
+      },
+      {
+        bankName: 'BBVA BANCOMER',
+        bankFullName:
+          'BBVA Bancomer, S.A., Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer',
+        accountHolder: 'Holder 6774',
+        formatAccountNumber: '12313214561',
+        accountNumber: '012290123132145611',
+        agreement: '127384',
+        reference: '1212937',
+      },
+      {
+        bankName: 'BBVA BANCOMER',
+        bankFullName:
+          'BBVA Bancomer, S.A., Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer',
+        accountHolder: 'Holder 6774',
+        formatAccountNumber: '12313214561',
+        accountNumber: '012290123132145611',
+        agreement: '127384',
+        reference: '1212937',
+      },
+      {
+        bankName: 'BBVA BANCOMER',
+        bankFullName:
+          'BBVA Bancomer, S.A., Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer',
+        accountHolder: 'Holder 6774',
+        formatAccountNumber: '12313214561',
+        accountNumber: '012290123132145611',
+        agreement: '127384',
+        reference: '1212937',
+      },
+    ],
+    bankAccountsGreaterThan8: [
+      {
+        bankName: 'BBVA BANCOMER',
+        bankFullName:
+          'BBVA Bancomer, S.A., Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer',
+        accountHolder: 'Holder 6774',
+        formatAccountNumber: '12313214561',
+        accountNumber: '012290123132145611',
+        agreement: '127384',
+        reference: '1212937',
+      },
+      {
+        bankName: 'BBVA BANCOMER',
+        bankFullName:
+          'BBVA Bancomer, S.A., Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer',
+        accountHolder: 'Holder 6774',
+        formatAccountNumber: '12313214561',
+        accountNumber: '012290123132145611',
+        agreement: '127384',
+        reference: '1212937',
+      },
+      {
+        bankName: 'BBVA BANCOMER',
+        bankFullName:
+          'BBVA Bancomer, S.A., Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer',
+        accountHolder: 'Holder 6774',
+        formatAccountNumber: '12313214561',
+        accountNumber: '012290123132145611',
+        agreement: '127384',
+        reference: '1212937',
+      },
+      {
+        bankName: 'BBVA BANCOMER',
+        bankFullName:
+          'BBVA Bancomer, S.A., Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer',
+        accountHolder: 'Holder 6774',
+        formatAccountNumber: '12313214561',
+        accountNumber: '012290123132145611',
+        agreement: '127384',
+        reference: '1212937',
+      },
+      {
+        bankName: 'BBVA BANCOMER',
+        bankFullName:
+          'BBVA Bancomer, S.A., Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer',
+        accountHolder: 'Holder 6774',
+        formatAccountNumber: '12313214561',
+        accountNumber: '012290123132145611',
+        agreement: '127384',
+        reference: '1212937',
+      },
+      {
+        bankName: 'BBVA BANCOMER',
+        bankFullName:
+          'BBVA Bancomer, S.A., Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer',
+        accountHolder: 'Holder 6774',
+        formatAccountNumber: '12313214561',
+        accountNumber: '012290123132145611',
+        agreement: '127384',
+        reference: '1212937',
+      },
+      {
+        bankName: 'BBVA BANCOMER',
+        bankFullName:
+          'BBVA Bancomer, S.A., Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer',
+        accountHolder: 'Holder 6774',
+        formatAccountNumber: '12313214561',
+        accountNumber: '012290123132145611',
+        agreement: '127384',
+        reference: '1212937',
+      },
+      {
+        bankName: 'BBVA BANCOMER',
+        bankFullName:
+          'BBVA Bancomer, S.A., Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer',
+        accountHolder: 'Holder 6774',
+        formatAccountNumber: '12313214561',
+        accountNumber: '012290123132145611',
+        agreement: '127384',
+        reference: '1212937',
+      },
+      {
+        bankName: 'BBVA BANCOMER',
+        bankFullName:
+          'BBVA Bancomer, S.A., Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer',
+        accountHolder: 'Holder 6774',
+        formatAccountNumber: '12313214561',
+        accountNumber: '012290123132145611',
         agreement: '127384',
         reference: '1212937',
       },
@@ -379,46 +589,65 @@ const convertHtmlToPdf = async (templatePath, data, outputPdf, type) => {
     orderId: data.orderId,
     ...data.dynamicDocumentsData,
   };
-  const options = {
-    newApplication: {
-      ...joinData,
-      nextPage:
-        type === 'newApplication' &&
-        ((joinData.signatories.formatSignatories.length > 1 &&
-          joinData.orderInvoiceExpirationDates.length > 8) ||
+  let newData;
+  switch (type) {
+    case 'newApplication':
+      newData = {
+        ...joinData,
+        showBankAccountInFirstPage:
+          joinData.bankAccounts.length <= 2 &&
+          joinData.orderInvoiceExpirationDates.length <= 25,
+        bankAccountsWithInitialData:
+          joinData.bankAccounts.length <= 2 &&
+          joinData.orderInvoiceExpirationDates.length > 25 &&
+          joinData.signatories.formatSignatories.length <= 5,
+        bankAccountsPageOne:
+          joinData.bankAccounts.length > 2 ||
+          (joinData.orderInvoiceExpirationDates.length > 25 &&
+            joinData.signatories.formatSignatories.length > 5),
+        bankAccountsPageTwo: joinData.bankAccountsGreaterThan8.length > 0,
+        nextPageByInitialData:
+          (joinData.signatories.formatSignatories.length > 1 &&
+            joinData.orderInvoiceExpirationDates.length > 7) ||
           joinData.signatories.formatSignatories.length > 2 ||
-          joinData.orderInvoiceExpirationDates.length > 14),
-    },
-    newConfirmation: {
-      ...joinData,
-    },
-    newPromissoryNote: {
-      ...joinData,
-      tableDataFirst:
-        type === 'newPromissoryNote' &&
-        joinData.paymentCalendarTable.length >= 2,
-      tableDataSecond:
-        type === 'newPromissoryNote' &&
-        joinData.paymentCalendarTable.length >= 4,
-      tableDataThird:
-        type === 'newPromissoryNote' &&
-        joinData.paymentCalendarTable.length >= 6,
-      tableDataFourth:
-        type === 'newPromissoryNote' &&
-        joinData.paymentCalendarTable.length >= 8,
-      tableDataFifth:
-        type === 'newPromissoryNote' &&
-        joinData.paymentCalendarTable.length >= 10,
-      tableDataSixth:
-        type === 'newPromissoryNote' &&
-        joinData.paymentCalendarTable.length >= 12,
-      tableDataSeventh:
-        type === 'newPromissoryNote' &&
-        joinData.paymentCalendarTable.length >= 14,
-    },
-  };
+          joinData.orderInvoiceExpirationDates.length > 13 ||
+          joinData.bankAccounts.length > 1,
+      };
+      break;
 
-  const newData = options[type] || joinData;
+    case 'newPromissoryNote':
+      newData = {
+        ...joinData,
+        tableDataFirst:
+          type === 'newPromissoryNote' &&
+          joinData.paymentCalendarTable.length >= 2,
+        tableDataSecond:
+          type === 'newPromissoryNote' &&
+          joinData.paymentCalendarTable.length >= 4,
+        tableDataThird:
+          type === 'newPromissoryNote' &&
+          joinData.paymentCalendarTable.length >= 6,
+        tableDataFourth:
+          type === 'newPromissoryNote' &&
+          joinData.paymentCalendarTable.length >= 8,
+        tableDataFifth:
+          type === 'newPromissoryNote' &&
+          joinData.paymentCalendarTable.length >= 10,
+        tableDataSixth:
+          type === 'newPromissoryNote' &&
+          joinData.paymentCalendarTable.length >= 12,
+        tableDataSeventh:
+          type === 'newPromissoryNote' &&
+          joinData.paymentCalendarTable.length >= 14,
+      };
+      break;
+
+    case 'newConfirmation':
+    default:
+      newData = { ...joinData };
+      break;
+  }
+
   chromium.setHeadlessMode = true;
   chromium.setGraphicsMode = false;
   chromium.font(
@@ -434,7 +663,7 @@ const convertHtmlToPdf = async (templatePath, data, outputPdf, type) => {
   await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
 
   // Generate a PDF from the loaded content
-  const bufferPdf = await page.pdf({
+  await page.pdf({
     path: outputPdf,
     format: 'Letter',
     margin: {
@@ -447,9 +676,9 @@ const convertHtmlToPdf = async (templatePath, data, outputPdf, type) => {
   console.log(`PDF generated successfully: ${outputPdf}`);
 };
 
-const newApplicationOutputPdf = `newApplicationOutputPdf${+new Date()}.pdf`;
-const newConfirmationOutputPdf = `newConfirmationOutputPdf${+new Date()}.pdf`;
-const newPromissoryNoteOutputPdf = `newPromissoryNoteOutputPdf${+new Date()}.pdf`;
+const newApplicationOutputPdf = `pdfs/newApplicationOutputPdf${+new Date()}.pdf`;
+const newConfirmationOutputPdf = `pdfs/newConfirmationOutputPdf${+new Date()}.pdf`;
+const newPromissoryNoteOutputPdf = `pdfs/newPromissoryNoteOutputPdf${+new Date()}.pdf`;
 
 convertHtmlToPdf(
   newApplicationPath,
