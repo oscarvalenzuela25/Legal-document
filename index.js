@@ -680,12 +680,12 @@ const newApplicationOutputPdf = `pdfs/newApplicationOutputPdf${+new Date()}.pdf`
 const newConfirmationOutputPdf = `pdfs/newConfirmationOutputPdf${+new Date()}.pdf`;
 const newPromissoryNoteOutputPdf = `pdfs/newPromissoryNoteOutputPdf${+new Date()}.pdf`;
 
-convertHtmlToPdf(
-  newApplicationPath,
-  newAplicationData,
-  newApplicationOutputPdf,
-  'newApplication'
-);
+// convertHtmlToPdf(
+//   newApplicationPath,
+//   newAplicationData,
+//   newApplicationOutputPdf,
+//   'newApplication'
+// );
 
 // convertHtmlToPdf(
 //   newConfirmationPath,
@@ -694,9 +694,9 @@ convertHtmlToPdf(
 //   'newConfirmation'
 // );
 
-// convertHtmlToPdf(
-//   newPromissoryNotePath,
-//   newPromissoryNoteData,
-//   newPromissoryNoteOutputPdf,
-//   'newPromissoryNote'
-// );
+convertHtmlToPdf(
+  newPromissoryNotePath,
+  newPromissoryNoteData,
+  newPromissoryNoteOutputPdf,
+  'newPromissoryNote'
+);
