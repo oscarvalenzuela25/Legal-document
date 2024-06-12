@@ -4,6 +4,10 @@ const { executablePath } = require('puppeteer');
 const fs = require('fs/promises');
 const chromium = require('@sparticuz/chromium-min');
 
+// newApplication = Notificación de Factoraje
+// newConfirmation = Confirmación de Factoraje
+// newPromissoryNote = Pagaré
+
 const newAplicationData = {
   orderId: 32342,
   dynamicDocumentsData: {
