@@ -3,6 +3,7 @@
 .env.development
 .env.production
 mongo/
+.DS_Store
 
 # dependencies
 /node_modules

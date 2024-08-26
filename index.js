@@ -538,13 +538,14 @@ const newPromissoryNoteData = {
       isPF: false,
       formatSignatories: [
         {
-          firstLine: 'Por: xxxxxor manuel ',
-          secondLine: 'Cargo: Apoderado',
+          firstLine: 'xxxxxor manuel ',
+          secondLine: 'Por su propio derecho',
           name: 'xxxxxor manuel ',
           address: ' - ',
           addressLine:
             'Con Domicilio en DEL AGUILA REAL 19430 INT 08, BAJA MAQ EL AGUILA, TIJUANA, BAJA CALIFORNIA, C.P: 22215',
           endorsementBusinessName: 'Lorem',
+          signatorTitle: 'El aval',
         },
         {
           firstLine: 'Por: xxxxxor manuel ',
@@ -554,6 +555,7 @@ const newPromissoryNoteData = {
           addressLine:
             'Con Domicilio en DEL AGUILA REAL 19430 INT 08, BAJA MAQ EL AGUILA, TIJUANA, BAJA CALIFORNIA, C.P: 22215',
           endorsementBusinessName: undefined,
+          signatorTitle: 'Por aval',
         },
         {
           firstLine: 'Por: xxxxxor manuel ',
@@ -563,6 +565,7 @@ const newPromissoryNoteData = {
           addressLine:
             'Con Domicilio en DEL AGUILA REAL 19430 INT 08, BAJA MAQ EL AGUILA, TIJUANA, BAJA CALIFORNIA, C.P: 22215',
           endorsementBusinessName: null,
+          signatorTitle: 'Por Aval',
         },
       ],
     },
@@ -643,6 +646,11 @@ const convertHtmlToPdf = async (templatePath, data, outputPdf, type) => {
         tableDataSeventh:
           type === 'newPromissoryNote' &&
           joinData.paymentCalendarTable.length >= 14,
+        endorsementSignatoriesSecondPage:
+          type === 'newPromissoryNote' &&
+          joinData.endorsementSignatories.formatSignatories.length +
+            joinData.signatoriesWithAddress.formatSignatories.length >
+            6,
       };
       break;
 
