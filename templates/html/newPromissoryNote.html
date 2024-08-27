@@ -462,21 +462,17 @@
           </p>
           <div class="spacerH3"></div>
 
+          {{#signatoriesWithAddress.formatSignatories}}
           <p class="text textAlignCenter">El Suscriptor</p>
-          <div class="spacerH3"></div>
-
           <p class="text textAlignCenter">{{businessName}}</p>
           <div class="spacerH6"></div>
-          <div class="spacerH6"></div>
-
-          {{#signatoriesWithAddress.formatSignatories}}
+          <div class="spacerH3"></div>
           <div class="flex justifyContentCenter">
             <div class="signXL"></div>
           </div>
           <p class="text textAlignCenter">{{firstLine}}</p>
           <p class="text textAlignCenter">{{secondLine}}</p>
           <p class="text textAlignCenter">{{addressLine}}</p>
-          <div class="spacerH6"></div>
           <div class="spacerH6"></div>
           {{/signatoriesWithAddress.formatSignatories}}
           <div></div>
@@ -488,6 +484,7 @@
           <p class="text textAlignCenter">{{signatorTitle}}</p>
           <p class="text textAlignCenter">{{endorsementBusinessName}}</p>
           <div class="spacerH6"></div>
+          <div class="spacerH3"></div>
           <div class="flex justifyContentCenter">
             <div class="signXL"></div>
           </div>
@@ -508,21 +505,11 @@
           />
           <div class="spacerH3"></div>
 
-          <p class="text">
-            Pagaré suscrito en la Ciudad de México, el día {{dateString}}.
-          </p>
-          <div class="spacerH3"></div>
-
-          <p class="text textAlignCenter">El Suscriptor</p>
-          <div class="spacerH3"></div>
-
-          <p class="text textAlignCenter">{{businessName}}</p>
-          <div class="spacerH6"></div>
-
           {{#endorsementSignatories.formatSignatories}}
           <p class="text textAlignCenter">{{signatorTitle}}</p>
           <p class="text textAlignCenter">{{endorsementBusinessName}}</p>
           <div class="spacerH6"></div>
+          <div class="spacerH3"></div>
           <div class="flex justifyContentCenter">
             <div class="signXL"></div>
           </div>
